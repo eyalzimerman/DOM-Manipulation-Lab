@@ -5,4 +5,5 @@ let button = document.getElementsByTagName('button');
 
 button.onclick = function() {
     let myInput = input.value;
+    input.value = '';
 }
