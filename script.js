@@ -10,5 +10,7 @@ button.onclick = function() {
     let li = document.createElement('li');
     let span = document.createElement('span');
     let liButton = document.createElement('button');
-    
+
+    li.appendChild(span);
+    li.appendChild(liButton);
 }
