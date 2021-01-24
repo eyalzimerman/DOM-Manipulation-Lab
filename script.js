@@ -20,5 +20,5 @@ button.onclick = function() {
     function myFunction () {
         ul.removeChild(li);
     }
-    
+    input.focus();
 }
