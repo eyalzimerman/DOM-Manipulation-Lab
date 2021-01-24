@@ -1,7 +1,7 @@
 "use strict";
-let ul = document.getElementsByTagName('ul');
-let input = document.getElementsByTagName('input');
-let button = document.getElementsByTagName('button');
+let ul = document.querySelector('ul');
+let input = document.querySelector('input');
+let button = document.querySelector('button');
 
 button.onclick = function() {
     let myInput = input.value;
@@ -16,4 +16,9 @@ button.onclick = function() {
     span.textContent = myInput;
     liButton.textContent = 'Delete';
     ul.appendChild(li);
+    liButton.addEventListener('click', myFunction);
+    function myFunction () {
+        ul.removeChild(li);
+    }
+    
 }
