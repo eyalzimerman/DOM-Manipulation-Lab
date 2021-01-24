@@ -13,4 +13,6 @@ button.onclick = function() {
 
     li.appendChild(span);
     li.appendChild(liButton);
+    span.textContent = myInput;
+    liButton.textContent = 'Delete';
 }
